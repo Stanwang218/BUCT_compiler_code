@@ -1,0 +1,27 @@
+digraph G {
+	0 [label="S'->. S
+S->. ( S ) S
+S->. ε
+0" color=red]
+	1 [label="S'->S .
+1" color=black shape=doublecircle]
+	2 [label="S->( . S ) S
+S->. ( S ) S
+S->. ε
+2" color=black shape=doublecircle]
+	3 [label="S->( S . ) S
+3" color=black]
+	4 [label="S->( S ) . S
+S->. ( S ) S
+S->. ε
+4" color=black shape=doublecircle]
+	5 [label="S->( S ) S .
+5" color=black shape=doublecircle]
+	0 -> 1 [label=S]
+	0 -> 2 [label="("]
+	2 -> 3 [label=S]
+	2 -> 2 [label="("]
+	3 -> 4 [label=")"]
+	4 -> 5 [label=S]
+	4 -> 2 [label="("]
+}

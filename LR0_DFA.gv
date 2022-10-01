@@ -1,0 +1,78 @@
+digraph G {
+	0 [label="S'->.S,$
+S->.aLb,$
+S->.a,$
+0" color=red]
+	1 [label="S'->S.,$
+1" color=black shape=doublecircle]
+	2 [label="S->a.Lb,$
+S->a.,$
+L->.aR,b
+2" color=black shape=doublecircle]
+	3 [label="S->aL.b,$
+3" color=black]
+	4 [label="L->a.R,b
+L->.aR,b/a
+R->.LR,b
+R->.b,b
+4" color=black]
+	5 [label="S->aLb.,$
+5" color=black shape=doublecircle]
+	6 [label="L->aR.,b
+6" color=black shape=doublecircle]
+	7 [label="L->a.R,b
+L->.aR,a
+R->.LR,b
+R->.b,b
+7" color=black]
+	8 [label="R->L.R,b
+R->.LR,b
+R->.b,b
+L->.aR,b/a
+8" color=black]
+	9 [label="R->b.,b
+9" color=black shape=doublecircle]
+	10 [label="L->a.R,a
+L->.aR,b/a
+R->.LR,a
+R->.b,a
+10" color=black]
+	11 [label="R->LR.,b
+11" color=black shape=doublecircle]
+	12 [label="L->aR.,a
+12" color=black shape=doublecircle]
+	13 [label="R->L.R,a
+R->.LR,a
+R->.b,a
+L->.aR,b/a
+13" color=black]
+	14 [label="R->b.,a
+14" color=black shape=doublecircle]
+	15 [label="R->LR.,a
+15" color=black shape=doublecircle]
+	0 -> 1 [label=S]
+	0 -> 2 [label=a]
+	2 -> 3 [label=L]
+	2 -> 4 [label=a]
+	3 -> 5 [label=b]
+	4 -> 6 [label=R]
+	4 -> 7 [label=a]
+	4 -> 8 [label=L]
+	4 -> 9 [label=b]
+	7 -> 6 [label=R]
+	7 -> 10 [label=a]
+	7 -> 8 [label=L]
+	7 -> 9 [label=b]
+	8 -> 11 [label=R]
+	8 -> 8 [label=L]
+	8 -> 9 [label=b]
+	8 -> 7 [label=a]
+	10 -> 12 [label=R]
+	10 -> 7 [label=a]
+	10 -> 13 [label=L]
+	10 -> 14 [label=b]
+	13 -> 15 [label=R]
+	13 -> 13 [label=L]
+	13 -> 14 [label=b]
+	13 -> 7 [label=a]
+}
